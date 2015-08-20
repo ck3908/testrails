@@ -1,0 +1,8 @@
+<h1>Calendar</h1>
+
+
+
+<!-- <a href ="mailto: dave@lockersoft.com">Email me</a><br/> -->
+<%# <%= mail_to("dave@lockersoft.com", "Email me") #%>
+<%# <%= day_of_week = @time.strftime("%w").to_i #%>
+<%= calendar(@month, @year).html_safe %>

@@ -1,0 +1,386 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+
+
+
+ */
+
+/* Created by http://freehtml5templates.com */
+/* reset */
+/* line 5, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 10, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+.error {
+  color: red;
+}
+
+/* render html5 elements as block */
+/* line 12, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+header, footer, section, aside, nav, article {
+  display: block;
+}
+
+/* line 16, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+body {
+  line-height: 1;
+  background: #9F3B19;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  color: #666;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/* layout */
+/* line 27, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+#container {
+  float: left;
+  margin: 0 -240px 0 0;
+  width: 650px;
+}
+
+/* line 33, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+#content {
+  margin: 0 280px 0 20px;
+}
+
+/* line 37, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+#sidebar {
+  float: right;
+  overflow: hidden;
+  width: 280px;
+  margin-top: 20px;
+}
+
+/* line 44, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+.menu,
+#main,
+#wrapper {
+  margin: 0 auto;
+  width: 940px;
+}
+
+/* line 51, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+#wrapper {
+  background: #F2E7D8;
+  padding: 0 20px;
+  -webkit-box-shadow: 3px 3px 7px #777;
+  -moz-box-shadow: 3px 3px 7px #777;
+}
+
+/* line 58, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+.footer-segment {
+  float: left;
+  margin-right: 20px;
+  width: 210px;
+}
+
+/* line 64, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+#fourth {
+  margin-right: 0;
+}
+
+/* line 68, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+#fourth p {
+  padding-right: 5px;
+}
+
+/* basics */
+/* line 74, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  clear: both;
+  color: #333;
+}
+
+/* line 80, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+a {
+  color: #9F3B19;
+}
+
+/* line 84, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+a:hover {
+  color: #333;
+}
+
+/* line 88, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+p {
+  margin-bottom: 18px;
+}
+
+/* line 92, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+li {
+  padding-left: 5px;
+}
+
+/* header */
+/* line 98, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+header {
+  margin-top: 20px;
+  padding: 30px 0 0 0;
+}
+
+/* line 103, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+header img {
+  clear: both;
+  border-top: 4px solid #333;
+  display: block;
+}
+
+/* line 109, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+header > h1 {
+  float: left;
+  margin: 0 0 18px 0;
+  width: 600px;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+/* line 117, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+header > h1 a {
+  color: #9F3B19;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: 0px 3px 3px #949494;
+}
+
+/* line 124, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+header > h2 {
+  color: #777;
+  clear: right;
+  float: right;
+  font-style: italic;
+  font-size: 16px;
+  margin: 14px 0 18px 0;
+  text-shadow: 0px 2px 3px #ddd;
+}
+
+/* nav */
+/* line 136, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+nav {
+  background: #333;
+  margin: 0 auto;
+  width: 940px;
+  display: block;
+  float: left;
+}
+
+/* line 144, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+nav .menu {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 12px;
+}
+
+/* line 150, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+nav .menu ul {
+  list-style: none;
+  margin: 0;
+}
+
+/* line 155, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+nav .menu li {
+  float: left;
+  position: relative;
+}
+
+/* line 160, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+nav .menu a {
+  display: block;
+  text-decoration: none;
+  color: #FFF;
+  padding: 0 20px;
+  line-height: 38px;
+}
+
+/* line 168, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+nav .menu a:hover {
+  color: #edab57;
+}
+
+/* nav 1-level dropdowns */
+/* line 173, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+nav .menu li ul {
+  display: none;
+}
+
+/* line 177, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+nav .menu ul li a {
+  display: block;
+  text-decoration: none;
+  color: #edbd7f;
+  background: #333;
+  margin-left: 1px;
+  white-space: nowrap;
+}
+
+/* line 186, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+nav .menu ul li a:hover {
+  background: #333;
+}
+
+/* line 190, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+nav .menu li:hover ul {
+  display: block;
+  position: absolute;
+}
+
+/* line 195, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+nav .menu li:hover li {
+  float: none;
+  font-size: 11px;
+}
+
+/* line 199, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+nav .menu li:hover a {
+  background: #333;
+}
+
+/* line 203, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+nav .menu li:hover li a:hover {
+  background: #333;
+}
+
+/* main content */
+/* line 209, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+#main {
+  overflow: hidden;
+  padding: 20px 0 0 0;
+}
+
+/* line 214, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+#content {
+  width: 600px;
+  margin-bottom: 36px;
+  color: #444;
+  font-size: 16px;
+  line-height: 24px;
+  border-right: 1px #9F3B19 solid;
+}
+
+/* line 223, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+article {
+  padding: 10px;
+}
+
+/* line 227, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+article img {
+  border: none;
+  -webkit-box-shadow: 3px 3px 7px #777;
+  -moz-box-shadow: 3px 3px 7px #777;
+}
+
+/* line 233, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+#content p,
+#content ul,
+#content ol,
+#content hr {
+  margin-bottom: 24px;
+}
+
+/* line 240, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+#content ul ul,
+#content ol ol,
+#content ul ol,
+#content ol ul {
+  margin-bottom: 0;
+}
+
+/* line 247, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+#content h1,
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6 {
+  color: #333;
+  margin: 0 0 20px 0;
+  line-height: 1.5em;
+  text-shadow: 0px 2px 3px #ddd;
+}
+
+/* line 259, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+.alignleft,
+img.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 24px;
+  margin-top: 4px;
+}
+
+/* line 267, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+.alignright,
+img.alignright {
+  display: inline;
+  float: right;
+  margin-left: 24px;
+  margin-top: 4px;
+}
+
+/* line 275, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+.aligncenter,
+img.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 283, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+img.alignleft, img.alignright, img.aligncenter {
+  margin-bottom: 12px;
+}
+
+/* sidebar and footer widget blocks */
+/* line 289, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+aside h3 {
+  font-size: 18px;
+  line-height: 1.5em;
+  text-shadow: 0px 2px 3px #ddd;
+}
+
+/* line 295, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+aside ul {
+  list-style: square inside;
+  margin-bottom: 20px;
+}
+
+/* line 300, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+footer {
+  margin-bottom: 20px;
+  clear: both;
+}
+
+/* line 305, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+#footer-area {
+  border-top: 2px solid #9F3B19;
+  margin-top: -4px;
+  padding: 18px 0;
+  overflow: hidden;
+}
+
+/* line 312, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+.current_page {
+  color: red;
+  text-decoration-style: solid;
+}
+
+/* line 317, C:/playrails/testrails/app/assets/stylesheets/styles.css.scss */
+.dave {
+  background-image: url("/assets/bonfire.jpg");
+}

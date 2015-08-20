@@ -1,0 +1,98 @@
+<%= tinymce_assets %>
+<%= tinymce %>
+
+<p id="notice"><%= notice %></p>
+<p> Average Rating: <%= stars( @movie.comments.average(:rating).round) %> </p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @movie.proper_name %>
+</p>
+
+<p>
+  <strong>Director:</strong>
+  <%= @movie.director %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @movie.description.html_safe %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @movie.year %>
+</p>
+
+<p>
+  <strong>Length:</strong>
+  <%= @movie.length %>
+</p>
+
+<p>
+  <strong>Format:</strong>
+  <%= @movie.format %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @movie.image %>
+</p>
+
+<p>
+  <strong>Thumbnail:</strong>
+  <%= image_tag @movie.thumbnail %>
+</p>
+
+<h3>Comments</h3>
+<% @movie.comments.descending.each do | comment | %>
+    <h3><%= comment.title %></h3>
+    <h3><%= time_ago_in_words(comment.created_at) %> ago, <% comment.author %> said: </h3>
+    <p><%= comment.content %></p>
+    <p>Rating: <%= stars( comment.rating) %> </p>
+    <% if is_admin? %>
+        <%= link_to "Delete Comment", movie_comment_path(@movie, comment), data: {confirm:"Are you sure?"}, method: :delete %>
+    <% end %>
+
+    <hr>
+<% end %>
+
+<%= form_for([@movie,@comment]) do |f| %>
+    <% if @comment.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@comment.errors.count, "error") %> prohibited this comment from being saved:</h2>
+
+          <ul>
+            <% @comment.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :title %><br>
+      <%= f.text_field :title %>
+    </div>
+    <div class="field">
+      <%= f.label :author %><br>
+      <%= f.text_field :author %>
+    </div>
+    <div class="field">
+      <%= f.label :content %><br>
+      <%= f.text_area :content, class: "tinymce" %>
+    </div>
+    <div class="field">
+      <%= f.label :rating %><br>
+      <%= f.number_field :rating %>
+    </div>
+    <%= f.hidden_field :movie_id %>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+<% end %>
+
+<%= link_to 'Email this movie', mail_movie_path(@movie) %>
+
+<%= link_to 'Edit', edit_movie_path(@movie) %> |
+<%= link_to 'Back', movies_path %>

@@ -1,0 +1,40 @@
+<% if is_admin? %>
+    <h2> Admin! </h2>
+    <%= link_to "Movies Admin", movies_path %>
+<% end %>
+
+<h1>Listing Movies</h1>
+
+<%= paginate @movies %>
+
+<table>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>Director</th>
+    <th>Description</th>
+    <th>Year</th>
+    <th>Length</th>
+    <th>Format</th>
+    <th>Thumbnail</th>
+    <th></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @movies.each do |movie| %>
+      <tr>
+        <td><%= link_to movie.proper_name, rental_show_path(movie.id) %></td>
+        <td><%= movie.director %></td>
+        <td><%= truncate(movie.description.html_safe, length: 20) %></td>
+        <td><%= movie.year %></td>
+        <td><%= movie.length %></td>
+        <td><%= movie.format %></td>
+        <td><%= link_to(image_tag(movie.thumbnail), movie) %></td>
+        <td><%= link_to 'Show', rental_show_path(movie.id) %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+

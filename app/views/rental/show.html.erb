@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @movie.proper_name %>
+</p>
+
+<p>
+  <strong>Director:</strong>
+  <%= @movie.director %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @movie.description.html_safe %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @movie.year %>
+</p>
+
+<p>
+  <strong>Length:</strong>
+  <%= @movie.length %>
+</p>
+
+<p>
+  <strong>Format:</strong>
+  <%= @movie.format %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= image_tag @movie.image %>
+</p>
+
+<p>
+  <strong>Thumbnail:</strong>
+  <%= image_tag @movie.thumbnail %>
+</p>
+
+
+<%= link_to 'Back', rental_index_path %>
+

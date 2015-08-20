@@ -1,0 +1,24 @@
+/* line 1, C:/playrails/testrails/app/assets/stylesheets/print.css.scss */
+body {
+  color: #000000;
+  background: #ffffff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12pt;
+}
+
+/* line 8, C:/playrails/testrails/app/assets/stylesheets/print.css.scss */
+a {
+  text-decoration: underline;
+  color: #0000ff;
+}
+
+/* line 13, C:/playrails/testrails/app/assets/stylesheets/print.css.scss */
+a:link:after, a:visited:after {
+  content: " (" attr(href) ") ";
+  font-size: 70%;
+}
+
+/* line 18, C:/playrails/testrails/app/assets/stylesheets/print.css.scss */
+nav, sidebar, footer, header, aside {
+  display: none;
+}
